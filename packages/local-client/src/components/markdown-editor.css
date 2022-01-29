@@ -1,0 +1,96 @@
+:root {
+  --md-editor-background: #37414b;
+  --md-editor-border: #79797966;
+  --md-editor-content-background: #202123;
+  --md-editor-content-color: #d4d4d4;
+  --md-editor-icon: #d4d4d4;
+}
+
+.markdown-cell .preview {
+  padding: 2rem;
+  border: 1px solid var(--md-editor-border);
+}
+
+.markdown-cell .editor .w-md-editor,
+.markdown-cell .editor .w-md-editor-toolbar {
+  border-radius: 0 !important;
+}
+
+.markdown-cell .editor .w-md-editor-bar svg {
+  visibility: hidden;
+}
+
+.markdown-cell .editor .w-md-editor-bar {
+  height: 12px;
+  width: 100%;
+  cursor: row-resize;
+  background-color: var(--md-editor-background);
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.markdown-cell .editor em {
+  font-style: italic;
+}
+
+.markdown-cell .editor .wmde-markdown hr {
+  border-top: 1px solid #dee5ed;
+}
+
+.markdown-cell .editor .wmde-markdown ol {
+  list-style: decimal;
+}
+
+.markdown-cell .editor .w-md-editor-show-live {
+  /* Hide menu bar buttons to prevent accidental delete */
+  z-index: 20;
+}
+
+.markdown-cell .editor .w-md-editor-toolbar {
+  background-color: var(--md-editor-background);
+  border-bottom: 1px solid var(--md-editor-border);
+}
+
+.markdown-cell .editor .w-md-editor-toolbar li button {
+  color: var(--md-editor-icon);
+}
+
+.markdown-cell .editor .w-md-editor-content {
+  background-color: #202123;
+}
+
+.markdown-cell .editor .w-md-editor,
+.markdown-cell .editor .w-md-editor .w-md-editor-text-pre {
+  color: var(--md-editor-content-color);
+}
+
+.markdown-cell .editor .w-md-editor-text-pre .bold {
+  color: unset;
+}
+
+.markdown-cell .editor .token.list.punctuation {
+  background-color: unset;
+}
+
+.markdown-cell .editor .w-md-editor-preview {
+  box-shadow: inset 1px 0 0 0 var(--md-editor-border);
+}
+
+.markdown-cell .editor .wmde-markdown-color code[class="language-markdown"] {
+  color: var(--md-editor-content-color);
+}
+
+.markdown-cell .editor .w-md-editor-text-pre .title,
+.markdown-cell .editor .w-md-editor-text-pre .bold {
+  color: var(--md-editor-content-color) !important;
+}
+
+.markdown-cell .editor .w-md-editor-toolbar li.active svg,
+.markdown-cell .editor .w-md-editor-toolbar li button:hover svg {
+  color: #000;
+}
+
+.markdown-cell .preview ul li.task-list-item {
+  list-style-type: none;
+}

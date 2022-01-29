@@ -1,0 +1,7 @@
+.cell-list {
+  margin: 1rem 2rem 25vh;
+}
+
+.react-draggable-transparent-selection .cell-list {
+  margin-bottom: 100vh;
+}

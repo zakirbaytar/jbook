@@ -1,0 +1,19 @@
+.action-bar {
+  background-color: var(--md-editor-background);
+  display: flex;
+  justify-content: flex-end;
+  height: 1.5rem;
+}
+
+.action-bar--hovering {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.4;
+  transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 20;
+}
+
+.action-bar--hovering:hover {
+  opacity: 1;
+}

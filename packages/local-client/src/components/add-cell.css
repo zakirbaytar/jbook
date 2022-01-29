@@ -1,0 +1,48 @@
+.add-cell {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 1rem 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.add-cell:only-child {
+  opacity: 1;
+}
+
+.add-cell:hover {
+  opacity: 1;
+}
+
+.add-cell .divider {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 2.5%;
+  right: 2.5%;
+  border-bottom: 1px solid var(--md-editor-border);
+  width: 95%;
+  z-index: -1;
+}
+
+.add-cell .add-buttons button {
+  padding: 0;
+  width: 6em;
+  height: 2em;
+  border-radius: 0.2rem;
+  margin: 0 1.5rem;
+  justify-content: flex-start;
+}
+
+.add-cell .add-buttons span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+}

@@ -1,0 +1,8 @@
+.cell-list__item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.cell-list__item .action-bar {
+  position: relative;
+}
